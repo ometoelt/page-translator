@@ -70,7 +70,7 @@ new_source = source.replace('lang="en"','lang="hi"')
 #loop the same process for the other webpages
 
 for link in links:
-    web_page = driver.get("https://www.classcentral.com/")
+    web_page = driver.get(link)
     source_code = driver.page_source
 
     n_span = driver.find_elements(By.TAG_NAME,'span')
